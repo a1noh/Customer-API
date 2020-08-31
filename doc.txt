@@ -1,0 +1,40 @@
+user: user
+pw: 123 // this has the access as ADMIN (check security)
+
+
+1. controller
+2. error exceptions
+3. testing
+3. docker - create image - run image into docker -
+
+    Docker coms
+    docker-machine start default : start my virtual box
+    docker-machine stop default: stop my virtual box
+    Docker-machine ls: see if my virtual box is running
+
+    Docker image ls: see what images I have on my local machine
+    Docker container ls: see what images are running on my local machine
+
+
+    Below command will access the mini vm of the running container
+
+    docker exec -ti hungry_ishizaka sh -c (ssh into the running docker container)
+    https://docs.docker.com/docker-for-mac/
+
+
+    This will run my image called gs-spring-boot-docker docker run -p 8080:8080 springio/gs-spring-boot-docker
+
+    This will build a images called customer demo using the current repository  *must have docker file
+    docker build -t customerdemo .
+
+
+
+
+3. security
+4. filter
+    - to enable filter uncomment all the MyFilter.java code and add a header with a value of '123'
+5. swagger
+
+
+spring.security.user.name=user
+spring.security.user.password=123
